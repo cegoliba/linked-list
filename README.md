@@ -3,4 +3,4 @@ linked-list
 
 Training
 
-An example of the linked-list data structure.
+A simple example of the linked-list data structure.
