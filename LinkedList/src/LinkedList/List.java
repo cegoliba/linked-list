@@ -3,7 +3,7 @@ package LinkedList;
 public class List {
 	
 	// Head (the address) of the list
-	private Item list; 
+	private Node list; 
 
 	// Empty list constructor
 	public List() {
@@ -13,14 +13,14 @@ public class List {
 
 	// Add node to ahead of the list
 	public void InsertToList(int value) {
-		Item node = new Item(value, list);
+		Node node = new Node(value, list);
 		list = node;
 	}
 
 	// Sort the list after it's been made
 	public void SortList() {
-		Item current = list;
-		Item previous = current;
+		Node current = list;
+		Node previous = current;
 		current = current._next;
 		while (current._next != null) {
 			if (previous._value > current._value) {
@@ -36,8 +36,8 @@ public class List {
 	}
 
 	// Return the last node in the list
-	public Item NodeAtEnd() {
-		Item temp;
+	public Node NodeAtEnd() {
+		Node temp;
 		if (list == null)
 			return null;
 		temp = list;
@@ -48,7 +48,7 @@ public class List {
 
 	// Add the new node into end of the list
 	public void AppendToList(int value) {
-		Item temp = new Item(value, null);
+		Node temp = new Node(value, null);
 		if (list == null)
 			list = temp;
 		else
@@ -57,13 +57,13 @@ public class List {
 
 	// Remove the node with the specific value
 	public void RemoveNode(int value) {
-		Item temp = list;
+		Node temp = list;
 		if (temp == null)
 			return;
 		if (temp._value == value)
 			list = temp._next;
 		else {
-			Item previous = temp;
+			Node previous = temp;
 			temp = temp._next;
 			while (temp != null && temp._value == value) {
 				previous = previous._next;
@@ -78,7 +78,7 @@ public class List {
 
 	// Return the number of the nodes in the list
 	public int LengthOfList() {
-		Item temp = list;
+		Node temp = list;
 		int count = 0;
 		while (temp != null) {
 			count++;
@@ -89,7 +89,7 @@ public class List {
 
 	// Display the nodes of the list
 	public void DisplayList() {
-		Item temp = list;
+		Node temp = list;
 		while (temp != null) {
 			System.out.print(temp._value + " ");
 			temp = temp._next;
@@ -98,8 +98,8 @@ public class List {
 
 	// Add the new node to its own order, place in the list
 	public void AddToList(int value) {
-		Item node = new Item(value, null);
-		Item temp;
+		Node node = new Node(value, null);
+		Node temp;
 		temp = list;
 
 		while (temp._next != null) {
