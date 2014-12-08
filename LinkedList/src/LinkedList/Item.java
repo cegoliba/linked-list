@@ -2,12 +2,11 @@ package LinkedList;
 
 public class Item {
 
-	// Listenin her bir elemanýnýn deðerini ve
-	// kendisinden sonra gelecek elemanýn referans adresini saklayacak olan veri alanlarý
+	// Node structure
 	int _value;
 	Item _next;
 
-	// Yapýcý metod
+	// Constructor with parameters which are properties of the new node
 	public Item(int value, Item next) {
 		// TODO Auto-generated constructor stub
 		this._value = value;

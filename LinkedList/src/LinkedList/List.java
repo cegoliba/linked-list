@@ -1,8 +1,11 @@
 package LinkedList;
 
 public class List {
-	private Item list; // First node address
+	
+	// Head (the address) of the list
+	private Item list; 
 
+	// Empty list constructor
 	public List() {
 		// TODO Auto-generated constructor stub
 		list = null;
@@ -32,6 +35,7 @@ public class List {
 
 	}
 
+	// Return the last node in the list
 	public Item NodeAtEnd() {
 		Item temp;
 		if (list == null)
@@ -42,6 +46,7 @@ public class List {
 		return temp;
 	}
 
+	// Add the new node into end of the list
 	public void AppendToList(int value) {
 		Item temp = new Item(value, null);
 		if (list == null)
@@ -50,6 +55,7 @@ public class List {
 			NodeAtEnd()._next = temp;
 	}
 
+	// Remove the node with the specific value
 	public void RemoveNode(int value) {
 		Item temp = list;
 		if (temp == null)
@@ -70,6 +76,7 @@ public class List {
 
 	}
 
+	// Return the number of the nodes in the list
 	public int LengthOfList() {
 		Item temp = list;
 		int count = 0;
@@ -80,6 +87,7 @@ public class List {
 		return count;
 	}
 
+	// Display the nodes of the list
 	public void DisplayList() {
 		Item temp = list;
 		while (temp != null) {
@@ -88,6 +96,7 @@ public class List {
 		}
 	}
 
+	// Add the new node to its own order, place in the list
 	public void AddToList(int value) {
 		Item node = new Item(value, null);
 		Item temp;

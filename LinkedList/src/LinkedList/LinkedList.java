@@ -8,16 +8,20 @@ public class LinkedList {
 
 	public static void main(String[] args) {
 
-		/*List list = new List();
+		// new List object
+		List list = new List(); 
 
+		// build the list with nodes
 		list.AppendToList(0);
 		list.InsertToList(3);
 		list.AppendToList(1);
 		list.AppendToList(2);
 		
-		list.SortList();
+		// sort the list
+		list.SortList(); 
 
-		list.DisplayList();*/
+		// display the list
+		list.DisplayList();
 
 	}
 }
