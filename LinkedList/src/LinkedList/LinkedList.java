@@ -16,6 +16,7 @@ public class LinkedList {
 		list.InsertToList(3);
 		list.AppendToList(1);
 		list.AppendToList(2);
+		list.InsertToList(4);
 		
 		// sort the list
 		list.SortList(); 
