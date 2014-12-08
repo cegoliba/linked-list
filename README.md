@@ -5,4 +5,4 @@ Training
 
 A simple example of the linked-list data structure.
 
----Java Project---
+-Java Project-
