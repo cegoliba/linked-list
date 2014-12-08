@@ -22,7 +22,7 @@ public class List {
 		Node current = list;
 		Node previous = current;
 		current = current._next;
-		while (current._next != null) {
+		while (current!= null) {
 			if (previous._value > current._value) {
 				int temp;
 				temp = previous._value;
