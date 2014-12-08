@@ -1,4 +1,4 @@
-package asd;
+package LinkedList;
 
 public class Item {
 

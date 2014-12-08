@@ -1,4 +1,4 @@
-package asd;
+package LinkedList;
 
 public class List {
 	private Item list; // First node address
